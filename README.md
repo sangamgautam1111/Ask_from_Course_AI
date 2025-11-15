@@ -1,4 +1,4 @@
-# 🎓 Ask from Course AI
+# 🎓 VectorPlex
 
 A powerful RAG (Retrieval Augmented Generation) system that converts audio lectures to text and allows you to ask questions about your course materials using AI.
 
