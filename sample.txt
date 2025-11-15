@@ -1,0 +1,122 @@
+import os
+import chromadb
+from sentence_transformers import SentenceTransformer
+import google.generativeai as genai
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+# Configure Gemini API
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
+    raise ValueError("Please set GEMINI_API_KEY in .env file")
+
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel('gemini-1.5-flash')
+
+# Load embedding model
+print("🔄 Loading models...")
+embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+
+# Connect to ChromaDB
+chroma_client = chromadb.PersistentClient(path="vector_db/chroma_db")
+collection = chroma_client.get_collection(name="course_transcriptions")
+print(f"✅ Connected to vector database ({collection.count()} documents)\n")
+
+
+def retrieve_relevant_context(query, n_results=5):
+    """Retrieve relevant documents from vector database"""
+    
+    # Generate query embedding
+    query_embedding = embedding_model.encode([query])[0].tolist()
+    
+    # Search in ChromaDB
+    results = collection.query(
+        query_embeddings=[query_embedding],
+        n_results=n_results
+    )
+    
+    # Format context
+    contexts = []
+    for i, doc in enumerate(results['documents'][0]):
+        metadata = results['metadatas'][0][i]
+        contexts.append({
+            'text': doc,
+            'filename': metadata.get('filename', 'Unknown'),
+            'type': metadata.get('type', 'Unknown')
+        })
+    
+    return contexts
+
+
+def generate_answer(query, contexts):
+    """Generate answer using Gemini with retrieved context"""
+    
+    # Build context string
+    context_text = "\n\n".join([
+        f"[Source: {ctx['filename']}]\n{ctx['text']}"
+        for ctx in contexts
+    ])
+    
+    # Create prompt
+    prompt = f"""You are a helpful AI assistant answering questions based on course transcripts.
+
+Context from course materials:
+{context_text}
+
+User Question: {query}
+
+Instructions:
+- Answer the question based on the provided context
+- If the context doesn't contain enough information, say so
+- Be clear and concise
+- Mention the source file if relevant
+- Answer in the same language as the question (Hindi or English)
+
+Answer:"""
+    
+    # Generate response
+    response = model.generate_content(prompt)
+    return response.text
+
+
+def ask_question(query):
+    """Main RAG function"""
+    print(f"❓ Question: {query}\n")
+    
+    # Retrieve relevant context
+    print("🔍 Searching relevant content...")
+    contexts = retrieve_relevant_context(query, n_results=5)
+    
+    print(f"✅ Found {len(contexts)} relevant segments\n")
+    
+    # Generate answer
+    print("🤖 Generating answer...\n")
+    answer = generate_answer(query, contexts)
+    
+    print("💡 Answer:")
+    print("-" * 50)
+    print(answer)
+    print("-" * 50)
+    
+    print("\n📚 Sources:")
+    unique_sources = list(set([ctx['filename'] for ctx in contexts]))
+    for source in unique_sources:
+        print(f"   - {source}")
+    
+    return answer, contexts
+
+
+# Example usage
+if __name__ == "__main__":
+    # Test queries
+    queries = [
+        "What is the main topic of the lectures?",
+        "Explain the key concepts discussed",
+        "मुख्य विषय क्या है?"  # Hindi query
+    ]
+    
+    for query in queries:
+        ask_question(query)
+        print("\n" + "="*70 + "\n")

@@ -1,0 +1,477 @@
+{
+    "filename": "Accuracy_score and Score Explained in Hindi l Machine Learning.mp3",
+    "text": " Hello and welcome to the DeFi Minute Engineering Today's video is about the future of Mahal. Today's video is about the future of Mahal. The knowledge of score and accuracy is very important for students. Regarding these topics, what is the difference? What is the difference? Tell us a little about the details you need to know about these videos. If you have seen the last video, please like and subscribe to this video. Let's start with the score. First of all, let's take a classifier. Let's take a SVC. The classifier object will be prepared for this. This is a very common object. Let's see how the program will look in line. Let's do something like this. The CLA is the same as the CLA. The CLA is the opposite of the CLA. The CLA is the same as the CLA. Let's use this name. Let's write it down. Let's write down the CLA. Let's write down the CLA. Let's pass the testing data. Let's pass the X test. Now, let's understand the purpose of this classifier. Let's talk about the score method. Let's see the location of the location. Let's see the data test. Let's see the details of the data test. Let's talk about the sample. Let's see the sample. Let's see the sample. Let's see the sample. The total is 10 samples. The null is directly predicted by your classifier. The null is 1.0. The null is 1.0. The null is 1.0. The null is 9.0. The null is 9.0. The null is 9.0. The null is 9.0. The null is 1.0. The null is 1.0. The null is 1.0. The null is 1.0. Let's use the predict method. We need answers sheet. We need answers sheet. I'll give you the first question paper. Let me give you the X test. Let me give you the predict method. Let me catch the predict. What is our answer sheet? Answer sheet is a lot of different. I'll give you the predict method. The predictor values are the actual values of data science. Let's perform the second step. Let's perform the second step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do this step. Let's do the actual values of data science. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step. This is what it is trying to tell. Let's do the next step. Let's do the next step. Let's do the next step. Let's do the next step.",
+    "segments": [
+        {
+            "start": 0.0,
+            "end": 5.0,
+            "text": " Hello and welcome to the DeFi Minute Engineering Today's video is about the future of Mahal."
+        },
+        {
+            "start": 5.0,
+            "end": 7.0,
+            "text": " Today's video is about the future of Mahal."
+        },
+        {
+            "start": 7.0,
+            "end": 12.0,
+            "text": " The knowledge of score and accuracy is very important for students."
+        },
+        {
+            "start": 12.0,
+            "end": 15.0,
+            "text": " Regarding these topics, what is the difference?"
+        },
+        {
+            "start": 15.0,
+            "end": 17.0,
+            "text": " What is the difference?"
+        },
+        {
+            "start": 17.0,
+            "end": 22.0,
+            "text": " Tell us a little about the details you need to know about these videos."
+        },
+        {
+            "start": 22.0,
+            "end": 31.0,
+            "text": " If you have seen the last video, please like and subscribe to this video."
+        },
+        {
+            "start": 31.0,
+            "end": 36.0,
+            "text": " Let's start with the score."
+        },
+        {
+            "start": 36.0,
+            "end": 40.0,
+            "text": " First of all, let's take a classifier."
+        },
+        {
+            "start": 40.0,
+            "end": 43.0,
+            "text": " Let's take a SVC."
+        },
+        {
+            "start": 44.0,
+            "end": 48.0,
+            "text": " The classifier object will be prepared for this."
+        },
+        {
+            "start": 48.0,
+            "end": 52.0,
+            "text": " This is a very common object."
+        },
+        {
+            "start": 52.0,
+            "end": 57.0,
+            "text": " Let's see how the program will look in line."
+        },
+        {
+            "start": 57.0,
+            "end": 61.0,
+            "text": " Let's do something like this."
+        },
+        {
+            "start": 61.0,
+            "end": 65.0,
+            "text": " The CLA is the same as the CLA."
+        },
+        {
+            "start": 65.0,
+            "end": 68.0,
+            "text": " The CLA is the opposite of the CLA."
+        },
+        {
+            "start": 68.0,
+            "end": 75.0,
+            "text": " The CLA is the same as the CLA."
+        },
+        {
+            "start": 75.0,
+            "end": 79.0,
+            "text": " Let's use this name."
+        },
+        {
+            "start": 79.0,
+            "end": 83.0,
+            "text": " Let's write it down."
+        },
+        {
+            "start": 83.0,
+            "end": 87.0,
+            "text": " Let's write down the CLA."
+        },
+        {
+            "start": 87.0,
+            "end": 92.0,
+            "text": " Let's write down the CLA."
+        },
+        {
+            "start": 92.0,
+            "end": 99.0,
+            "text": " Let's pass the testing data."
+        },
+        {
+            "start": 99.0,
+            "end": 103.0,
+            "text": " Let's pass the X test."
+        },
+        {
+            "start": 103.0,
+            "end": 108.0,
+            "text": " Now, let's understand the purpose of this classifier."
+        },
+        {
+            "start": 108.0,
+            "end": 112.0,
+            "text": " Let's talk about the score method."
+        },
+        {
+            "start": 112.0,
+            "end": 116.0,
+            "text": " Let's see the location of the location."
+        },
+        {
+            "start": 116.0,
+            "end": 119.0,
+            "text": " Let's see the data test."
+        },
+        {
+            "start": 119.0,
+            "end": 125.0,
+            "text": " Let's see the details of the data test."
+        },
+        {
+            "start": 125.0,
+            "end": 129.0,
+            "text": " Let's talk about the sample."
+        },
+        {
+            "start": 129.0,
+            "end": 134.0,
+            "text": " Let's see the sample."
+        },
+        {
+            "start": 134.0,
+            "end": 139.0,
+            "text": " Let's see the sample."
+        },
+        {
+            "start": 139.0,
+            "end": 143.0,
+            "text": " Let's see the sample."
+        },
+        {
+            "start": 143.0,
+            "end": 147.0,
+            "text": " The total is 10 samples."
+        },
+        {
+            "start": 147.0,
+            "end": 150.0,
+            "text": " The null is directly predicted by your classifier."
+        },
+        {
+            "start": 150.0,
+            "end": 157.0,
+            "text": " The null is 1.0."
+        },
+        {
+            "start": 157.0,
+            "end": 162.0,
+            "text": " The null is 1.0."
+        },
+        {
+            "start": 162.0,
+            "end": 168.0,
+            "text": " The null is 1.0."
+        },
+        {
+            "start": 168.0,
+            "end": 174.0,
+            "text": " The null is 9.0."
+        },
+        {
+            "start": 174.0,
+            "end": 180.0,
+            "text": " The null is 9.0."
+        },
+        {
+            "start": 180.0,
+            "end": 186.0,
+            "text": " The null is 9.0."
+        },
+        {
+            "start": 186.0,
+            "end": 190.0,
+            "text": " The null is 9.0."
+        },
+        {
+            "start": 190.0,
+            "end": 196.0,
+            "text": " The null is 1.0."
+        },
+        {
+            "start": 196.0,
+            "end": 202.0,
+            "text": " The null is 1.0."
+        },
+        {
+            "start": 202.0,
+            "end": 207.0,
+            "text": " The null is 1.0."
+        },
+        {
+            "start": 207.0,
+            "end": 213.0,
+            "text": " The null is 1.0."
+        },
+        {
+            "start": 213.0,
+            "end": 219.0,
+            "text": " Let's use the predict method."
+        },
+        {
+            "start": 219.0,
+            "end": 223.0,
+            "text": " We need answers sheet."
+        },
+        {
+            "start": 223.0,
+            "end": 227.0,
+            "text": " We need answers sheet."
+        },
+        {
+            "start": 227.0,
+            "end": 234.0,
+            "text": " I'll give you the first question paper."
+        },
+        {
+            "start": 234.0,
+            "end": 238.0,
+            "text": " Let me give you the X test."
+        },
+        {
+            "start": 238.0,
+            "end": 244.0,
+            "text": " Let me give you the predict method."
+        },
+        {
+            "start": 244.0,
+            "end": 248.0,
+            "text": " Let me catch the predict."
+        },
+        {
+            "start": 248.0,
+            "end": 255.0,
+            "text": " What is our answer sheet?"
+        },
+        {
+            "start": 255.0,
+            "end": 259.0,
+            "text": " Answer sheet is a lot of different."
+        },
+        {
+            "start": 259.0,
+            "end": 269.0,
+            "text": " I'll give you the predict method."
+        },
+        {
+            "start": 269.0,
+            "end": 277.0,
+            "text": " The predictor values are the actual values of data science."
+        },
+        {
+            "start": 277.0,
+            "end": 281.0,
+            "text": " Let's perform the second step."
+        },
+        {
+            "start": 281.0,
+            "end": 287.0,
+            "text": " Let's perform the second step."
+        },
+        {
+            "start": 287.0,
+            "end": 293.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 293.0,
+            "end": 299.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 299.0,
+            "end": 304.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 304.0,
+            "end": 309.0,
+            "text": " Let's do this step."
+        },
+        {
+            "start": 309.0,
+            "end": 319.0,
+            "text": " Let's do the actual values of data science."
+        },
+        {
+            "start": 319.0,
+            "end": 327.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 327.0,
+            "end": 337.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 337.0,
+            "end": 345.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 345.0,
+            "end": 351.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 351.0,
+            "end": 355.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 355.0,
+            "end": 365.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 365.0,
+            "end": 373.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 373.0,
+            "end": 383.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 383.0,
+            "end": 391.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 391.0,
+            "end": 401.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 401.0,
+            "end": 409.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 409.0,
+            "end": 419.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 419.0,
+            "end": 427.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 427.0,
+            "end": 437.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 437.0,
+            "end": 445.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 445.0,
+            "end": 455.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 455.0,
+            "end": 463.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 463.0,
+            "end": 481.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 481.0,
+            "end": 501.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 501.0,
+            "end": 521.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 521.0,
+            "end": 531.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 531.0,
+            "end": 541.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 541.0,
+            "end": 551.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 551.0,
+            "end": 561.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 561.0,
+            "end": 571.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 571.0,
+            "end": 589.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 589.0,
+            "end": 609.0,
+            "text": " This is what it is trying to tell."
+        },
+        {
+            "start": 609.0,
+            "end": 629.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 629.0,
+            "end": 649.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 649.0,
+            "end": 669.0,
+            "text": " Let's do the next step."
+        },
+        {
+            "start": 669.0,
+            "end": 691.0,
+            "text": " Let's do the next step."
+        }
+    ],
+    "timestamp": "2025-11-14 17:49:36"
+}
